@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="app">
+        <div class="nav-right">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="control">
+                <div class="page">
+                    <div><i class='bx bx-home-alt-2'></i>Home</div>
+                    <div><i class='bx bx-trending-up'></i>Trends</div>
+                    <div><i class='bx bx-globe'></i>Discovery</div>
+                </div>
+                <div class="library">
+                    <p>Library</p>
+                    <div><i class='bx bx-time'></i>Recent</div>
+                    <div><i class='bx bx-heart'></i>Favorites</div>
+                    <div><i class='bx bx-user'></i>Favorites Artist</div>
+                </div>
+                <div class="playlist">
+                    <p>Playlist</p>
+                    <div><i class='bx bx-add-to-queue'></i>Create New</div>
+                    <div><i class='bx bx-list-ul'></i>2021</div>
+                    <div><i class='bx bx-list-ul'></i>2022</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search Items">
+                    <i class='bx bx-search'></i>
+                </div>
+
+                <div class="switch-theme">
+                    <div class="wrap-switch">
+                        <input type="checkbox" id="switch" hidden>
+                        <label for="switch"></label>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <div class="avt"><img src="assets/img/avt/284964800_749276699574996_5357098427937859442_n.jpg"
+                            alt=""></div>
+                    <div class="info">
+                        <div class="username">Your Name</div>
+                        <div class="name">Trần Tiến</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="gallery-container">
+                    <div class="info">
+                        <div class="veri">
+                            <i class='bx bxs-badge-check' ></i>
+                            <p>Verified Artist</p>
+                        </div>
+                        <div class="name"><h1>Kamelot</h1></div>
+                        <div class="listeners"><p>284,199</p> monthly listeners</div>
+                    </div>
+                    <div class="about">
+                        <p>Kamelot is an American power metal band from Tampa, Florida, formed by Thomas Youngblood in 1987. The Norwegian vocalist Roy Khan joined for the album Siége Perilous, and shared songwriting credit with Youngblood until his departure in April 2011</p>
+                        <div class="more-about"><h3>About</h3> <i class='bx bx-chevron-right'></i> </div>
+                    </div>
+                </div>
+                <div class="music-container">
+                   
+                    <div class="warp-music">
+                        <div class="text">
+                            <span>Popular</span>
+                            <small>PlayAll</small>
+                        </div>
+                        <div class="list-music">
+                            <div class="music">
+                                <div class="left">
+                                    <span class="num default">Number</span>
+                                    
+                                    <span class="name-music">Track Name </span>
+                             
+                                </div>
+                                <div class="right">
+                                    <span class="time"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mp3-wrap">
+                            <div class="control">
+                                <div class="info">
+                                    <div class="name">
+                                        <img src="" alt="">
+                                        <div class="musicName">
+                                            <span class="nameMusic"></span>
+                                            <small class="author">
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btn random"><i class='bx bx-shuffle'></i></div>
+                                        <div class=" btn prev"><i class='bx bx-left-arrow'></i></div>
+                                        <div class="btn toggle-play pause">
+                                            <i class='bx bx-play'></i>
+                                            <i class='bx bx-pause'></i>
+                                        </div>
+                                        <div class="btn next"><i class='bx bx-right-arrow'></i></div>
+                                        <div class="btn repeat "><i class='bx bx-repost'></i></div>
+                                    </div>
+                                    <div class="more-offtion">
+                                        <div class="btn heart"><i class='bx bx-heart'></i></div>
+                                        <div class="btn more"><i class='bx bx-dots-vertical-rounded'></i></div>
+                                    </div>
+                                </div>
+                                <div class="music">
+                                    <span class="timeleft"></span>
+                                    <input type="range" name="range" id="range" class="range">
+                                    <span class="timeright"></span>
+                                    <audio id="song" src=""></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albums-warp">
+                        <div class="text-ablum">
+                            <span>Album </span>
+                            <i class='bx bx-chevron-right'></i>
+                        </div>
+                        <div class="ablums">
+                            <div class="ablum1">
+                                <img src="assets/img/ablum1.png" alt="">
+                                <span>The Shadow Theory</span>
+                                <small>2018</small>
+                            </div>
+                            <div class="ablum2">
+                                 <img src="assets/img/album2.png" alt="">
+                                <span>I Am The Empi...</span>
+                                <small>2020</small>
+                            </div>
+                            <div class="ablum2">
+                                <img src="assets/img/ablum5.png" alt="">
+                               <span>Different World</span>
+                               <small>2018</small>
+                           </div>
+                        </div>
+                        <div class="ablums">
+                            <div class="ablum1">
+                                <img src="assets/img/album3.png" alt="">
+                                <span>Heaven</span>
+                                <small>2015</small>
+                            </div>
+                            <div class="ablum2">
+                                 <img src="assets/img/ablum4.png" alt="">
+                                <span>Eternity</span>
+                                <small>1995</small>
+                            </div>
+                            <div class="ablum2">
+                                <img src="assets/img/ablum6.jpg" alt="">
+                               <span>World Of Walker</span>
+                               <small>2021</small>
+                           </div>
+                    </div>
+                   
+                   </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
